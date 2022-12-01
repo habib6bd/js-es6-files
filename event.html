@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+
+    <div>
+        <h3>Event Blog</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, doloremque?</p>
+        <button onclick="yellow()">click for Yellow</button>
+        <button id="redbtn">click for Red</button>
+        <button id="goldenRod">click for golden</button>
+        <button id="hotPink">click for hotPink</button>
+        <button id="bluBtn">click for blue</button>
+        <p id="para">Some demo text</p>
+        <button id="updatebtn" onclick="clickMethod()">update</button>
+    </div>
+
+
+    <script>
+        function yellow() {
+            document.body.style.backgroundColor = 'yellow';
+        }
+
+        var redbutton = document.getElementById('redbtn');
+        redbutton.onclick = function () {
+            document.body.style.backgroundColor = 'red';
+        }
+
+        const golden = document.getElementById('goldenRod');
+        golden.addEventListener('click', goldenf)
+
+        function goldenf() {
+            document.body.style.backgroundColor = 'goldenrod';
+        }
+
+        const hotPink = document.getElementById('hotPink');
+        hotPink.addEventListener('click', function () {
+            document.body.style.backgroundColor = 'hotpink';
+        })
+
+        document.getElementById('bluBtn').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'blue';
+        })
+
+        
+      function clickMethod() {
+            const p = document.getElementById('para');
+            p.innerText = 'Demo text are updated now';
+        };
+
+
+    </script>
+</body>
+
+</html>

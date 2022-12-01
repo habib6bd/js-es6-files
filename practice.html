@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+
+<body>
+
+    <!-- <button onclick="window.print()">click</button> -->
+    <!--    <div>
+        <p id="date"></p>
+        <p id="day"></p>
+        <p id="currentTime"></p>
+        <p id=""></p>
+        <p></p>
+    </div>
+
+-->
+    <div>
+        <h5>Animate a javascript string</h5>
+        <pre id="animatet">w3resource</pre>
+        <button onclick="animateFun()">click</button>
+    </div>
+
+    <script>
+
+        /* let ftime = new Date();
+        // console.log(ftime);
+        
+        function timeFormat() {
+        
+            let hr = ftime.getHours();
+            let mint = ftime.getMinutes();
+            let sec = ftime.getSeconds();
+            let ampm = hr >= 12 ? 'PM': 'AM'
+            hr = hr % 12;
+            hr = hr ? hr : 12;
+            mint = mint < 10 ? '0'+mint : mint;
+            let fulltime = hr + ':' + mint + ':' + sec + ''+ ampm
+            return fulltime;
+        
+        }
+        console.log(timeFormat()); */
+
+
+        // const date = new Date();
+        // const day = date.getDay();
+        // const hours = date.getHours();
+
+
+        // const minutes = date.getMinutes();
+        // const sec = date.getSeconds();
+
+        // let time = hours + ':' + minutes + ':' + + sec;
+
+        // const tDate = document.getElementById('date');
+        // tDate.innerHTML = date;
+
+        // const tDay = document.getElementById('day');
+        // tDay.innerHTML = hours;
+        // // console.log(day);
+
+        // const currentT = document.getElementById('currentTime');
+        // // currentT.innerHTML = 'The time is now ' + time;
+
+        // function formatHoursTo12(date) {
+        //     if (hours > 12) {
+        //         time = (hours % 12 || 12) + ':' + minutes + ':' + sec + 'PM'
+        //     } else {
+        //         time = (hours % 12 || 12) + ':' + minutes + ':' + sec + 'AM'
+        //     }
+        //     return time;
+        // }
+
+        // console.log(formatHoursTo12(date));
+
+        // switch (day) {
+        //     case 0:
+        //         console.log("Today is Sunday");
+        //         break;
+        //     case 1:
+        //         console.log("Today is Monday");
+        //         break;
+        //     case 2:
+        //         console.log("Today is Tuesday");
+        //         break;
+        //     case 3:
+        //         console.log("Today is Wednesday");
+        //         break;
+        //     case 4:
+        //         console.log("Today is Thursday");
+        //         break;
+        //     case 5:
+        //         console.log("Today is Friday");
+        //         break;
+        //     case 6:
+        //         console.log("Today is Saturday");
+        //         break;
+        //     default:
+        //         console.log("missing");
+
+
+        //     }
+
+
+        //                 function formatHoursTo12(date) {
+        //                     return date.getHours() % 12 || 12;
+        //                 }
+
+        //                 const date1 = new Date('September 24, 2025 15:24:00');
+        //                 console.log(formatHoursTo12(date1)); // 👉️ 3
+
+        //                 const date2 = new Date('September 24, 2025 23:05:00');
+        //                 console.log(formatHoursTo12(date2)); // 👉️ 11
+
+        //                 const date3 = new Date('September 24, 2025 12:13:00');
+        //                 console.log(formatHoursTo12(date3)); // 👉️ 12
+
+        // formatHoursTo12(date);
+
+        /* const tDate = new Date('2022-9-8');
+        console.log(tDate);
+        let tmonth = tDate.getMonth()+1;
+        console.log(tmonth);
+        
+        let tyear = tDate.getFullYear();
+        console.log(tyear);
+        
+        let tday = tDate.getDate();
+        console.log(tday);
+        
+        if(tmonth < 10) {
+        tmonth = '0'+tmonth;
+        }
+        
+        if(tday < 10) {
+        tday = '0'+tday;
+        }
+        
+        console.log(tday + '/' + tmonth + '/' + tyear); */
+
+
+        /* var side1 = 5;
+        var side2 = 6;
+        var side3 = 7;
+        
+        var s = (side1 + side2 + side3)/2
+        var area = Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)))
+        
+        console.log(area); */
+
+        //Animate a string
+
+        // function animateFun() {
+        //     var element = document.getElementById('animatet');
+        //     var textNode = element.childNodes[0];
+        //     var text = textNode.data;
+
+        //     // console.log(text);
+        //     setInterval(() => {
+
+        //         text = text[text.length - 1] + text.substring(0, text.length - 1);
+        //         // text = text[text.length - 1];
+        //         // const sub = text.substring(0, text.length - 1)
+        //         // console.log(sub);
+        //         textNode.data = text;
+
+        //     }, 500);
+        // }
+
+
+
+
+
+    </script>
+    <script src="/practice.js"></script>
+</body>
+
+</html>
